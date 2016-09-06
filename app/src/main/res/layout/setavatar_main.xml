@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@mipmap/background"
+    android:layout_height="match_parent" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#333232"
+        android:textColor="@android:color/white"
+        android:text="设置头像"
+        android:paddingTop="15dp"
+        android:paddingLeft="50dp"
+        />
+    <ImageView
+        android:id="@+id/iv_show_avatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/love"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        />
+    <Button
+        android:gravity="center_vertical"
+        android:background="#fff"
+        android:id="@+id/fromCamera"
+        android:layout_below="@+id/iv_show_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="58dp"
+        android:paddingLeft="15dp"
+        android:textSize="15dp"
+        android:text="拍一张" />
+
+    <Button
+        android:gravity="center_vertical"
+        android:background="#fff"
+        android:id="@+id/fromPicture"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fromCamera"
+        android:layout_marginTop="1dp"
+        android:textSize="15dp"
+        android:paddingLeft="15dp"
+        android:text="从相册中选择" />
+</RelativeLayout>

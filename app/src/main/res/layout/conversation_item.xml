@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <ImageView
+       android:layout_width="80dp"
+       android:layout_height="80dp"
+       android:padding="8dp"
+       android:scaleType="fitXY"
+       android:src="@mipmap/love"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="15dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chat with tuling"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/tv_lastchattime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="time"
+                android:textSize="16sp"
+                android:layout_gravity="right" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_lastcontent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat with you"
+            android:paddingTop="15dp"
+            android:paddingLeft="10dp"
+            android:textSize="12sp"/>
+    </LinearLayout>
+</LinearLayout>

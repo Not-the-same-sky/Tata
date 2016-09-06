@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_conversation"
+            android:onClick="onTabSelect"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/tab_message_btn"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:text="会话"
+            android:textColor="@drawable/tab_textcolor"
+            android:textSize="12sp" />
+        <!--<Button-->
+            <!--android:id="@+id/btn_timeline"-->
+            <!--android:onClick="onTabSelect"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:drawableTop="@drawable/tab_timeline_btn"-->
+            <!--android:paddingBottom="1dp"-->
+            <!--android:paddingTop="1dp"-->
+            <!--android:scaleType="centerInside"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:text="时间轴"-->
+            <!--android:textColor="@drawable/tab_textcolor"-->
+            <!--android:textSize="12sp" />-->
+        <Button
+            android:id="@+id/btn_set"
+            android:onClick="onTabSelect"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/tab_set_btn"
+            android:paddingBottom="1dp"
+            android:paddingTop="1dp"
+            android:scaleType="centerInside"
+            android:background="@android:color/transparent"
+            android:text="设置"
+            android:textColor="@drawable/tab_textcolor"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_bottom"
+        android:background="#fff" />
+</RelativeLayout>

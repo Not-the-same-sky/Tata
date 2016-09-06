@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="0dp"></ScrollView>
+    <RelativeLayout
+        android:id="@+id/id_ly_top"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="#333232">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="图灵机器人"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_ly_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/input_bg"
+        android:layout_alignParentBottom="true">
+        <EditText
+            android:id="@+id/id_input_msg"
+            android:layout_width="match_parent"
+            android:textCursorDrawable="@drawable/edittext_cursor"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:maxLines="3"
+            android:background="@drawable/input_bg"
+            android:layout_alignTop="@+id/id_send_msg"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/id_send_msg" />
+        <Button
+            android:id="@+id/id_send_msg"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:background="@drawable/send_btn_selector"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="发送" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/id_listview"
+        android:layout_width="wrap_content"
+        android:isScrollContainer="false"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/id_ly_bottom"
+        android:layout_below="@id/id_ly_top"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:dividerHeight="5dp"
+        android:transcriptMode="normal"/>
+</RelativeLayout>

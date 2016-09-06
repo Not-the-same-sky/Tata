@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+    android:id="@+id/rl_title"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_alignParentTop="true"
+    android:background="#333232">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="图灵机器人"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+</RelativeLayout>
+
+<ListView
+    android:id="@+id/chat_list"
+    android:layout_below="@+id/rl_title"
+    android:layout_above="@+id/buttom_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="2dp"
+    android:transcriptMode="normal"
+    android:divider="@null"
+    android:dividerHeight="5dp" >
+</ListView>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/buttom_message"
+    android:layout_above="@+id/buttom_image"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bottombar_bg"
+        android:orientation="horizontal" >
+        <EditText
+            android:id="@+id/et_input_msg"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.26"
+            android:background="@drawable/chat_bottombar_input"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/id_send_msg"
+            android:visibility="gone"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:shadowColor="#ff568ab5"
+            android:shadowDx="0.0"
+            android:shadowDy="-1.0"
+            android:shadowRadius="0.2"
+            android:text="发送"
+            android:textColor="#fff" />
+        <Button
+            android:id="@+id/btn_chat_add"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@mipmap/zf_show_add_photo_btn"
+            android:shadowColor="#ff568ab5"
+            android:shadowDx="0.0"
+            android:shadowDy="-1.0"
+            android:shadowRadius="0.2"
+            android:textColor="#fff"
+            android:textSize="14.0sp" />
+    </LinearLayout>
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/buttom_image"
+    android:layout_alignParentBottom="true" >
+
+    <LinearLayout
+        android:id="@+id/ll_chatmain_affix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottombar_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <TextView
+            android:id="@+id/tv_chatmain_affix_take_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="2dp"
+            android:drawableTop="@mipmap/zf_take_camera_btn_bg"
+            android:gravity="center_horizontal"
+            android:text="拍照"
+            android:textColor="#000000" />
+        <TextView
+            android:id="@+id/tv_chatmain_affix_album"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:drawablePadding="2dp"
+            android:drawableTop="@mipmap/zf_take_photo_btn_bg"
+            android:text="相册"
+            android:textColor="#000000"
+            android:gravity="center_horizontal"
+            />
+    </LinearLayout>
+</RelativeLayout>
+</RelativeLayout>

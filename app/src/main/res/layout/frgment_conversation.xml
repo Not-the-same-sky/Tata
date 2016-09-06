@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#333232"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="聊天"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+      <ListView
+       android:id="@+id/id_conversation"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+</LinearLayout>

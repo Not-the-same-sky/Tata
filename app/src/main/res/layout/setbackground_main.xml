@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="45dp"
+       android:background="#333232"
+       android:textColor="@android:color/white"
+       android:drawablePadding="15dp"
+       android:text="聊天背景"
+       android:paddingTop="15dp"
+       android:paddingLeft="50dp"
+       />
+    <Button
+        android:id="@+id/btn_choose_bgpic"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:textColor="#333232"
+        android:layout_marginTop="25dp"
+        android:gravity="left"
+        android:text="选择背景图"
+        android:paddingTop="15dp"
+        android:paddingLeft="12dp"
+        />
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:text="从相册中选择"
+        android:gravity="left"
+        android:paddingTop="15dp"
+        android:paddingLeft="12dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:text="拍一张"
+        android:paddingTop="15dp"
+        android:gravity="left"
+        android:paddingLeft="12dp"
+        />
+</LinearLayout>
