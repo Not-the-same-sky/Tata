@@ -9,25 +9,25 @@ import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
+import butterknife.ButterKnife;
+
 /**
  * Created by 不一样的天空 on 2016/9/1.
  */
-public class BaseActivity extends Activity {
+public class BaseActivity extends Activity{
 
     @Override
     public void setContentView(int layoutResID) {
         super.setContentView(layoutResID);
     }
-
     private Toast toast;
-
     public void toast(final Object obj) {
         try {
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
                     if (toast == null)
-                        toast = Toast.makeText(BaseActivity.this, "", Toast.LENGTH_SHORT);
+                        toast = Toast.makeText(BaseActivity.this,"", Toast.LENGTH_SHORT);
                     toast.setText(obj.toString());
                     toast.show();
                 }
@@ -36,13 +36,12 @@ public class BaseActivity extends Activity {
             e.printStackTrace();
         }
     }
-
-    public void startActivity(Class<? extends Activity> target, Bundle bundle, boolean finish) {
+    public void startActivity(Class<? extends Activity> target, Bundle bundle,boolean finish) {
         Intent intent = new Intent();
         intent.setClass(this, target);
         if (bundle != null)
             intent.putExtra(getPackageName(), bundle);
-        startActivity(intent);
+            startActivity(intent);
         if (finish)
             finish();
     }
@@ -65,9 +64,7 @@ public class BaseActivity extends Activity {
         }
     }
 
-    /**
-     * 隐藏软键盘-一般是EditText.getWindowToken()
-     *
+    /**隐藏软键盘-一般是EditText.getWindowToken()
      * @param token
      */
     public void hideSoftInput(IBinder token) {
