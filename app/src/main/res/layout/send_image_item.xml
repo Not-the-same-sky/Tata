@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="right"
-    android:orientation="vertical">
+    android:orientation="vertical" >
 
     <TextView
         android:id="@+id/id_to_image_date"
@@ -22,9 +22,8 @@
         android:gravity="right"
         android:paddingTop="5dp"
         android:paddingRight="5dp"
-        android:orientation="horizontal">
-
-        <ImageView
+        android:orientation="horizontal" >       
+         <ImageView
             android:id="@+id/send_image"
             android:layout_width="100dp"
             android:layout_height="120dp"
@@ -32,15 +31,16 @@
             android:maxHeight="150dp"
             android:src="@mipmap/love"
             android:scaleType="fitXY"
-            android:layout_marginRight="6dp" />
-
-        <ImageView
-            android:id="@+id/si_avatar"
-            android:src="@mipmap/love"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:paddingRight="8dp"
-            android:paddingTop="5dp"
-            android:scaleType="centerCrop" />
+            android:layout_marginRight="6dp"
+           />
+            <ImageView
+                android:id="@+id/si_avatar"
+                android:src="@mipmap/love"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:paddingRight="8dp"
+                android:paddingTop="5dp"
+                android:scaleType="centerCrop"
+                 />     
     </LinearLayout>
 </LinearLayout>

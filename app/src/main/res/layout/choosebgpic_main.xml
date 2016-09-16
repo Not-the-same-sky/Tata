@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="45dp"
@@ -12,15 +10,14 @@
         android:text="选择背景图"
         android:textSize="16dp"
         android:paddingLeft="50dp"
-        android:paddingTop="12dp" />
-
-    <GridView
-        android:id="@+id/gv_choosepic"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#bbc4b9"
-        android:numColumns="3"
-        android:stretchMode="columnWidth"
-        android:horizontalSpacing="4dp"
-        android:verticalSpacing="2dp" />
+        android:paddingTop="12dp"/>
+   <GridView
+       android:id="@+id/gv_choosepic"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="#bbc4b9"
+       android:numColumns="3"
+       android:stretchMode="columnWidth"
+       android:horizontalSpacing="4dp"
+       android:verticalSpacing="2dp"/>
 </LinearLayout>

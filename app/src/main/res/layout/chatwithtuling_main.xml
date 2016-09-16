@@ -1,11 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"></ScrollView>
-
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="0dp"></ScrollView>
     <RelativeLayout
         android:id="@+id/id_ly_top"
         android:layout_width="match_parent"
@@ -28,7 +26,6 @@
         android:layout_height="40dp"
         android:background="@drawable/input_bg"
         android:layout_alignParentBottom="true">
-
         <EditText
             android:id="@+id/id_input_msg"
             android:layout_width="match_parent"
@@ -40,7 +37,6 @@
             android:layout_alignTop="@+id/id_send_msg"
             android:layout_alignParentBottom="true"
             android:layout_toLeftOf="@+id/id_send_msg" />
-
         <Button
             android:id="@+id/id_send_msg"
             android:layout_width="60dp"
@@ -62,5 +58,5 @@
         android:divider="@null"
         android:listSelector="@android:color/transparent"
         android:dividerHeight="5dp"
-        android:transcriptMode="normal" />
+        android:transcriptMode="normal"/>
 </RelativeLayout>

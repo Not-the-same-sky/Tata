@@ -6,7 +6,7 @@ import cn.bmob.v3.datatype.BmobFile;
 /**
  * Created by 不一样的天空 on 2016/9/1.
  */
-public class Share extends BmobObject {
+public class Share extends BmobObject{
     private String name;
     private int age;
     private BmobFile icon;

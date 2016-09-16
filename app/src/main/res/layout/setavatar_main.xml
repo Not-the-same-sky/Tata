@@ -2,8 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:background="@mipmap/background"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent" >
     <TextView
         android:layout_width="match_parent"
         android:layout_height="45dp"
@@ -11,8 +10,8 @@
         android:textColor="@android:color/white"
         android:text="设置头像"
         android:paddingTop="15dp"
-        android:paddingLeft="50dp" />
-
+        android:paddingLeft="50dp"
+        />
     <ImageView
         android:id="@+id/iv_show_avatar"
         android:layout_width="150dp"
@@ -20,8 +19,8 @@
         android:scaleType="fitXY"
         android:src="@mipmap/love"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="85dp" />
-
+        android:layout_marginTop="85dp"
+        />
     <Button
         android:gravity="center_vertical"
         android:background="#fff"
