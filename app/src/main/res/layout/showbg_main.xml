@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:background="#2c2d2c"
+       android:paddingTop="5dp"
+       android:paddingBottom="5dp"
+       android:orientation="horizontal"
+       android:weightSum="1">
+       <Button
+           android:id="@+id/inform_bg"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="使用"
+           android:layout_marginLeft="285dp"
+           android:layout_gravity="right"
+           android:textSize="12sp"
+           android:textColor="#fff"
+           android:background="#03ec35" />
+   </LinearLayout>
+    <ImageView
+        android:id="@+id/show_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/love"/>
+</LinearLayout>

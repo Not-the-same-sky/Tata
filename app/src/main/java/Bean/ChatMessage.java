@@ -1,22 +1,23 @@
 package Bean;
 
-import java.util.Date;
-
 /**
  * Created by 不一样的天空 on 2016/8/27.
  */
-public class TuLingMessage {
+public class ChatMessage {
     private int messageType;
     private String msg;
     private long date;
-    public TuLingMessage(int messageType,String msg,long date){
-        this.messageType=messageType;
-        this.msg=msg;
-        this.date=date;
+
+    public ChatMessage(int messageType, String msg, long date) {
+        this.messageType = messageType;
+        this.msg = msg;
+        this.date = date;
     }
-    public TuLingMessage(){
+
+    public ChatMessage() {
 
     }
+
     public long getDate() {
         return date;
     }

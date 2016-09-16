@@ -6,6 +6,7 @@ package Bean;
 public class Conversation {
     private String title;
     private String lastContent;
+
     public String getLastContent() {
         return lastContent;
     }

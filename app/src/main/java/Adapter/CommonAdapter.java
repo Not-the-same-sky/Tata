@@ -7,18 +7,18 @@ import android.widget.BaseAdapter;
 
 import java.util.List;
 
-import Bean.MessageType;
-
 /**
  * Created by 不一样的天空 on 2016/8/27.
  */
 public abstract class CommonAdapter<T> extends BaseAdapter {
     private Context context;
     private List<T> messages;
-    public CommonAdapter(Context context,List<T> messages){
-        this.context=context;
-        this.messages=messages;
+
+    public CommonAdapter(Context context, List<T> messages) {
+        this.context = context;
+        this.messages = messages;
     }
+
     @Override
     public int getCount() {
         return messages.size();
@@ -37,9 +37,10 @@ public abstract class CommonAdapter<T> extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-          BaseViewHolder baseViewHolder=new BaseViewHolder(context,parent,position,0);
-          convert(baseViewHolder,getItem(position));
+        BaseViewHolder baseViewHolder = new BaseViewHolder(context, parent, position, 0);
+        convert(baseViewHolder, getItem(position));
         return baseViewHolder.getmConvertView();
     }
-    public abstract void convert(BaseViewHolder baseViewHolder,T t);
+
+    public abstract void convert(BaseViewHolder baseViewHolder, T t);
 }

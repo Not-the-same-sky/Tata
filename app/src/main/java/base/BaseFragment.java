@@ -10,19 +10,21 @@ import android.widget.Toast;
 /**
  * Created by 不一样的天空 on 2016/9/2.
  */
-public class BaseFragment extends Fragment{
+public class BaseFragment extends Fragment {
     protected void runOnMain(Runnable runnable) {
         getActivity().runOnUiThread(runnable);
     }
+
     protected final static String NULL = "";
     private Toast toast;
+
     public void toast(final Object obj) {
         try {
             runOnMain(new Runnable() {
                 @Override
                 public void run() {
                     if (toast == null)
-                        toast = Toast.makeText(getActivity(), NULL,Toast.LENGTH_SHORT);
+                        toast = Toast.makeText(getActivity(), NULL, Toast.LENGTH_SHORT);
                     toast.setText(obj.toString());
                     toast.show();
                 }
@@ -32,7 +34,9 @@ public class BaseFragment extends Fragment{
         }
     }
 
-    /**启动指定Activity
+    /**
+     * 启动指定Activity
+     *
      * @param target
      * @param bundle
      */
@@ -43,6 +47,7 @@ public class BaseFragment extends Fragment{
             intent.putExtra(getActivity().getPackageName(), bundle);
         getActivity().startActivity(intent);
     }
+
     @SuppressWarnings("unchecked")
     protected <T extends View> T getView(int id) {
         return (T) getActivity().findViewById(id);
